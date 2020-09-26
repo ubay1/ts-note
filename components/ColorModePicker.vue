@@ -3,8 +3,7 @@
     <ul>
       <!-- <li v-for="color of colors" :key="color"> -->
       <component
-        :is="`icon-${color}`"
-        v-if="color === 'sepia' ? 'sepia' : 'dark'"
+        :is="`icon-${color === 'sepia' ? 'sepia' : 'dark'}`"
         :class="getClasses(color)"
         @click="$colorMode.preference = color"
       />
@@ -27,7 +26,8 @@ export default {
   },
   data () {
     return {
-      color: 'sepia'
+      dark: false,
+      color: ''
     }
   },
   methods: {
@@ -37,7 +37,6 @@ export default {
         return {}
       }
       this.$nuxt.$emit('theme', this.$colorMode.value)
-      // eslint-disable-next-line no-console
       this.color = this.$colorMode.preference === 'sepia' ? 'dark' : 'sepia'
       return {
         preferred: color === this.$colorMode.preference === 'sepia' ? 'dark' : 'sepia',

@@ -79,5 +79,5 @@ a = false; // error, a nggak bisa boolean, hanya string dan number
 Type Assertion adalah cara untuk memproses data sesuai tipenya. Dalam bahasa lain disebut Type Cast, digunakan dengan kata **as**
 ```ts
 let a:any = 1;
-console.log( (a as number).toFixed(2) );
+// console.log( (a as number).toFixed(2) );
 ```

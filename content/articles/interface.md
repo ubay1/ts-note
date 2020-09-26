@@ -14,7 +14,7 @@ interface LabeledValue {
 }
 
 function printLabel(labeledObj: LabeledValue) {
-    console.log(labeledObj.label);
+    // console.log(labeledObj.label);
 }
 
 let myObj = { size: 10, label: "Size 10 Object" };
@@ -32,7 +32,7 @@ interface SquareConfig {
     width?: number;
 }
 function createSquare(config: SquareConfig){
-    console.log(config); // tampil {color: "black"}
+    // console.log(config); // tampil {color: "black"}
 }
 let mySquare = createSquare({ color: "black" });
 ```
@@ -49,12 +49,12 @@ interface Point {
 
 let p1: Point = { x: 10, y: 20 };
 p1.x = 5; // error, nilai x tidak dpt diubah
-console.log(p1.x); // tampil 10
+// console.log(p1.x); // tampil 10
 
 // cara lain menggunakan readonly
 let a: number[] = [1, 2, 3, 4];
 let ro: ReadonlyArray<number> = a;
-console.log(ro[0]); // tampil 1
+// console.log(ro[0]); // tampil 1
 ro.push(5) // error
 ```
 untuk variabel kita menggunakan **CONST** 
@@ -74,6 +74,6 @@ interface StringArray {
 let myArray: StringArray;
 myArray = ["Bob", "Fred"];
 let myStr: string = myArray[0];
-console.log(myStr); // tampil bob
+// console.log(myStr); // tampil bob
 ```
 <br>

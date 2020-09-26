@@ -80,7 +80,7 @@ export default {
       this.$store.dispatch('project', data)
 
       this.showCreateNewModal = !this.showCreateNewModal
-      // console.log(this.projectState.nama_project)
+      // // console.log(this.projectState.nama_project)
     }
   }
 }

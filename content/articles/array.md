@@ -24,7 +24,7 @@ setiap elemen atau index dari array kita bisa pake **(for .. of)**
 ```ts
 let a:number[] = [1,2,3,4,5];
 for(let n of a){
-    console.log(n);
+    // console.log(n);
 }
 ```
 <br>

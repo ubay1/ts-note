@@ -7,7 +7,7 @@
         v-for="post in posts"
         :key="post.path"
         :post="post"
-        :class="{dark: isTheme === 'sepia' ? false : true}"
+        :class="{dark}"
       />
     </div>
   </div>
@@ -26,7 +26,7 @@ export default {
     try {
       const posts = await $content('articles', { deep: true }).fetch()
       // eslint-disable-next-line no-console
-      console.log(posts)
+      // console.log(posts)
       return { posts }
     } catch (err) {
       error({
@@ -37,12 +37,14 @@ export default {
   },
   data () {
     return {
+      dark: false,
       isTheme: ''
     }
   },
   created () {
     this.$nuxt.$on('theme', (data) => {
       this.isTheme = data
+      this.isTheme === 'dark' ? this.dark = true : this.dark = false
     })
   }
 }
