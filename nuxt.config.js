@@ -135,5 +135,26 @@ export default {
         })
       }
     }
-  }
+  },
+  manifest: {
+    name: 'Typescript Note',
+    short_name: 'Typescript Note',
+    lang: 'en',
+    display: 'standalone',
+    theme_color: '#007acc',
+    icons: [
+      {
+        src: '/asset/appicon/android-icon-144x144.png',
+        sizes: '144x144',
+        type: 'image/png',
+        density: '3.0'
+      },
+      {
+        src: '/asset/appicon/android-icon-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        density: '4.0'
+      }
+    ]
+  },
 }

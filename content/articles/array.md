@@ -4,21 +4,21 @@ title: array
 tags: typescript
 ---
 
-1. Array Syntax Biasa
+# Array Syntax Biasa
 ```ts
 let a:number[] = [100,200];// array numerik
 let b:any[] = [1,2,'a','b']; // array campuran
 ```
 <br>
 
-2. Array Syntax Generric
+# Array Syntax Generric
 ```ts
 let a:Array<number> = [100,200];  // syntax generic
 let b:Array<any> = [1,2,'a','b']; // syntax generic
 ```
 <br>
 
-3. Array Iterator
+# Array Iterator
 Untuk memproses Array, TypeScript nyediain fitur namanya Iterator. Jadi untuk memproses
 setiap elemen atau index dari array kita bisa pake **(for .. of)**
 ```ts
@@ -29,7 +29,7 @@ for(let n of a){
 ```
 <br>
 
-4. Tuple
+# Tuple
 Tuple adalah array yang jumlah awal elemennya fixed. Tipe data setiap elemennya boleh
 berbeda. Nilai awal tuple harus sesuai dengan urutan yang ditentukan waktu kita deklarasi
 variabelnya.
