@@ -4,6 +4,11 @@ title: function
 tags: typescript
 ---
 
+Generics bisa dibilang mirip any, bedanya kalo kita pake any **TSC** nggak bisa memvalidasi
+(type-checking) kode secara akurat karena nggak ada info tentang tipe data yang dipake.
+Kalo kita pake editor yang mendukung Intellisense ini juga nggak jalan karena kurang info.
+<br><br>
+
 # Named Function
 ```ts
 function add(a: number, b: number) {
