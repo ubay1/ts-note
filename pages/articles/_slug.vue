@@ -12,7 +12,7 @@
     <nuxt-content :document="article" />
 
     <div class="footer">
-      Referensi:
+      <!-- Referensi: -->
       <p
         v-for="(article, index) in article.referensi"
         :key="`article-${index}`"
