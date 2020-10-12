@@ -45,27 +45,27 @@ export default {
     {
       src: './plugins/fontAwesome.js',
       ssr: false
-    },
-    {
-      src: './plugins/tooltip.js',
-      ssr: false
-    },
-    {
-      src: './plugins/drag.js',
-      ssr: false
-    },
-    {
-      src: './plugins/vuex_persist.js',
-      ssr: false
-    },
-    {
-      src: './plugins/fabric.js',
-      ssr: false
-    },
-    {
-      src: './plugins/vue_swal.js',
-      ssr: false
     }
+    // {
+    //   src: './plugins/tooltip.js',
+    //   ssr: false
+    // },
+    // {
+    //   src: './plugins/drag.js',
+    //   ssr: false
+    // },
+    // {
+    //   src: './plugins/vuex_persist.js',
+    //   ssr: false
+    // },
+    // {
+    //   src: './plugins/fabric.js',
+    //   ssr: false
+    // },
+    // {
+    //   src: './plugins/vue_swal.js',
+    //   ssr: false
+    // }
   ],
   /*
   ** Auto import components

@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
 export default {
   async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
+      console.log(article)
       return { article }
     } catch (err) {
       error({

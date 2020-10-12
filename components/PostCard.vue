@@ -2,7 +2,9 @@
   <div class="list_articles">
     <nuxt-link :to="post.path">
       <div class="tag">
-        {{ post.tags }}
+        <nuxt-link :to="`/tags/${post.tags}`">
+          {{ post.tags }}
+        </nuxt-link>
       </div>
       <div class="title">
         {{ post.title }}
