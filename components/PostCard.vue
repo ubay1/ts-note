@@ -4,7 +4,9 @@
 
     <div class="list_articles">
       <div class="image">
-        <img :src="post.image" alt="">
+        <nuxt-link :to="post.path">
+          <img :src="post.image" alt="">
+        </nuxt-link>
       </div>
 
       <div class="bg_main">
