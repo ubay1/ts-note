@@ -26,7 +26,7 @@ export default {
       { hid: 'description', name: 'description', content: 'typescript note' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/ts.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favv.ico' }
     ]
   },
   /*
