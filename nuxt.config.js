@@ -141,8 +141,8 @@ export default {
     }
   },
   manifest: {
-    name: 'Typescript Note',
-    short_name: 'Typescript Note',
+    name: 'Iseng Iseng',
+    short_name: 'Iseng Iseng',
     lang: 'en',
     display: 'standalone',
     theme_color: '#007acc',
