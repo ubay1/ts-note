@@ -79,7 +79,11 @@ export default {
     },
     perPage: {
       type: Number,
-      default: 3
+      default: 5
+    }
+  },
+  data () {
+    return {
     }
   },
   computed: {
@@ -103,6 +107,8 @@ export default {
         ? this.currentPage + 1
         : this.totalPages
     }
+  },
+  methods: {
   }
 }
 </script>

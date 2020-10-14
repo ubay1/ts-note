@@ -33,7 +33,7 @@
     </div>
 
     <div v-if="total" class="constainer mx-auto my-5 max-w-5xl">
-      <Paginations v-if="total > 3" :total="total" />
+      <Paginations v-if="total > 5" :total="total" />
     </div>
     <!-- <div class="dibuat">
       <small>{{ $moment(post.createdAt).format('LLLL') }}</small>

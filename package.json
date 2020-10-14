@@ -26,6 +26,7 @@
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.0",
     "prism-themes": "^1.4.0",
+    "vue-ads-pagination": "^2.1.7",
     "vue-draggable-resizable": "^2.2.0",
     "vue-sweetalert2": "^3.0.8",
     "vue-tippy": "^4.7.0",

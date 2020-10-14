@@ -71,6 +71,11 @@ export default {
   },
   mounted () {
     // this.routeName = this.$route.name
+  },
+  head () {
+    return {
+      title: 'Page 1 - Programming Note'
+    }
   }
 }
 </script>

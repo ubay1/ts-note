@@ -45,6 +45,10 @@ export default {
     {
       src: './plugins/fontAwesome.js',
       ssr: false
+    },
+    {
+      src: './plugins/vue-pagination.js',
+      ssr: false
     }
     // {
     //   src: './plugins/tooltip.js',
