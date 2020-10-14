@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <div class="logo">
-      <img src="../../static/header.png" alt="Catatan Koding">
+      <nuxt-link to="/">
+        <img src="../../static/header.png" alt="Catatan Koding">
+      </nuxt-link>
     </div>
   </div>
 </template>

@@ -11,12 +11,12 @@ export default {
   },
   async asyncData ({ params, error, $content }) {
     try {
-      const articleAll = await $content('articles', { deep: true })
+      const articleTags = await $content('articles', { deep: true })
         .where({ tags: { $contains: params.slug } })
         .fetch()
       // eslint-disable-next-line no-console
-      console.log(articleAll)
-      return { articleAll }
+      console.log(articleTags)
+      return { articleTags }
     } catch (err) {
       error({
         statusCode: 404,

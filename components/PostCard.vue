@@ -2,10 +2,10 @@
   <div class="bg_all_post">
     <!-- <nuxt-link :to="post.path"> -->
 
-    <div class="list_articles">
+    <div v-for="post of articles" :key="post.slug" class="list_articles">
       <div class="image">
         <nuxt-link :to="post.path">
-          <img :src="post.image" alt="">
+          <img :src="`${nameroute === 'index' ? post.image : `../../${post.image}`}`" alt="">
         </nuxt-link>
       </div>
 
@@ -24,12 +24,16 @@
           <nuxt-link
             v-for="(itemTag, index) in post.tags"
             :key="`indexTag-${index}`"
-            :to="`/tags/${post.tags}`"
+            :to="`/tags/${itemTag}`"
           >
             {{ itemTag }}
           </nuxt-link>
         </div>
       </div>
+    </div>
+
+    <div v-if="total" class="constainer mx-auto my-5 max-w-5xl">
+      <Paginations v-if="total > 3" :total="total" />
     </div>
     <!-- <div class="dibuat">
       <small>{{ $moment(post.createdAt).format('LLLL') }}</small>
@@ -39,13 +43,13 @@
 </template>
 
 <script>
+import Paginations from '@/components/Paginations'
 export default {
-  props: {
-    post: {
-      type: Object,
-      required: true
-    }
+  components: {
+    Paginations
   },
+  // eslint-disable-next-line vue/require-prop-types
+  props: ['articles', 'total', 'nameroute'],
   data () {
     return {
       // eslint-disable-next-line no-undef
@@ -54,7 +58,7 @@ export default {
   },
   mounted () {
     // eslint-disable-next-line no-console
-    console.log(this.post)
+    console.log(this.nameroute)
   }
 }
 </script>

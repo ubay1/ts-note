@@ -24,12 +24,13 @@
 
         .list_articles {
           display: grid;
+          margin-bottom: 20px;
           // grid-template-columns: repeat(2, 1fr);
           grid-template-columns: 50% 50%;
           // grid-gap: 10px;
 
           &:hover {
-            box-shadow: 0px 2px 10px darkgrey;
+            box-shadow: 0px 2px 10px lightgrey;
           }
 
           .image {
@@ -135,19 +136,20 @@
         // margin-bottom: 10px;
         box-shadow: unset;
         border: unset;
-        padding-bottom: 20px !important;
+        padding-bottom: 10px !important;
         padding: 10px;
         border-radius: 10px;
         position: relative;
 
         .list_articles {
           display: grid;
+          margin-bottom: 20px;
           // grid-template-columns: repeat(2, 1fr);
           grid-template-columns: 50% 50%;
           // grid-gap: 10px;
 
           &:hover {
-            box-shadow: 0px 2px 10px darkgrey;
+            box-shadow: 0px 2px 10px lightgrey;
           }
 
           .image {

@@ -1,15 +1,15 @@
 <template>
-  <div class="__main_block">
-    <!-- <Header /> -->
-    <div class="main_doc">
-      <!-- <PostCard
-        v-for="post in articleAll"
+  <div class="__tags_block">
+    <Header />
+    <div class="tags_doc">
+      <PostCard
+        v-for="post in articleTags"
         :key="post.path"
         :post="post"
         :class="{dark}"
-      /> -->
+      />
     </div>
   </div>
 </template>
-<script src=""></script>
+<script src="./slug.js"></script>
 <style lang="scss" src="./tags.scss"></style>
