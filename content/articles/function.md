@@ -1,7 +1,8 @@
 ---
 title: function
-# description: Belajar shalat sesuai sunnah
-tags: typescript
+description: Function pada typescript 
+tags: [typescript]
+image: img_blog/ts.png
 ---
 
 Generics bisa dibilang mirip any, bedanya kalo kita pake any **TSC** nggak bisa memvalidasi

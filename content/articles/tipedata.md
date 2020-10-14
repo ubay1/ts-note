@@ -1,8 +1,8 @@
 ---
 title: Tipe data
-# description: Tipe data
-tags: typescript
-referensi: []
+description: Tipe Data pada typescript 
+tags: [typescript]
+image: img_blog/ts.png
 ---
 
 # DEKLARASI & DEFINISI

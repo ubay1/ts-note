@@ -1,7 +1,8 @@
 ---
 title: array
-# description: Belajar shalat sesuai sunnah
-tags: typescript
+description: Array pada typescript 
+tags: [typescript, javascript]
+image: img_blog/ts.png
 ---
 
 # Array Syntax Biasa

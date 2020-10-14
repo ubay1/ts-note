@@ -1,10 +1,10 @@
 <template>
   <div class="__main_block">
     <Header />
-    <ColorModePicker />
+    <!-- <ColorModePicker /> -->
     <div class="main_doc">
       <PostCard
-        v-for="post in posts"
+        v-for="post in articleAll"
         :key="post.path"
         :post="post"
         :class="{dark}"
@@ -14,20 +14,20 @@
 </template>
 <script>
 import Header from '@/components/header/header.vue'
-import ColorModePicker from '@/components/ColorModePicker'
+// import ColorModePicker from '@/components/ColorModePicker'
 import PostCard from '~/components/PostCard'
 export default {
   components: {
     Header,
-    PostCard,
-    ColorModePicker
+    PostCard
+    // ColorModePicker
   },
   async asyncData ({ params, error, $content }) {
     try {
-      const posts = await $content('articles', { deep: true }).fetch()
+      const articleAll = await $content('articles', { deep: true }).fetch()
       // eslint-disable-next-line no-console
-      // console.log(posts)
-      return { posts }
+      console.log(articleAll)
+      return { articleAll }
     } catch (err) {
       error({
         statusCode: 404,

@@ -1,7 +1,8 @@
 ---
 title: interface
-# description: Belajar shalat sesuai sunnah
-tags: typescript
+description: Interface pada typescript 
+tags: [typescript]
+image: img_blog/ts.png
 ---
 
 # Custom Types dengan Interfaces

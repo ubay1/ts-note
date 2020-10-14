@@ -1,9 +1,7 @@
 <template>
   <div class="header">
     <div class="logo">
-      <img src="ts.png" alt="Typescript Note">
-      <p>=</p>
-      <img src="js.jpg" alt="Javascript Note">
+      <img src="../../static/header.png" alt="Catatan Koding">
     </div>
   </div>
 </template>

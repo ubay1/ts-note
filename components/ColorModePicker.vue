@@ -3,7 +3,7 @@
     <ul>
       <!-- <li v-for="color of colors" :key="color"> -->
       <component
-        :is="`icon-${color === 'sepia' ? 'sepia' : 'dark'}`"
+        :is="`icon-${color === 'light' ? 'light' : 'dark'}`"
         :class="getClasses(color)"
         @click="$colorMode.preference = color"
       />
@@ -13,16 +13,16 @@
 
 <script>
 // import IconSystem from '@/assets/color_mode/system.svg?inline'
-// import IconLight from '@/assets/color_mode/light.svg?inline'
+import IconLight from '@/assets/color_mode/light.svg?inline'
 import IconDark from '@/assets/color_mode/dark.svg?inline'
-import IconSepia from '@/assets/color_mode/sepia.svg?inline'
+// import IconSepia from '@/assets/color_mode/sepia.svg?inline'
 
 export default {
   components: {
     // IconSystem,
-    // IconLight,
-    IconDark,
-    IconSepia
+    IconLight,
+    IconDark
+    // IconSepia
   },
   data () {
     return {
@@ -36,10 +36,10 @@ export default {
         return {}
       }
       this.$nuxt.$emit('theme', this.$colorMode.value)
-      this.color = this.$colorMode.preference === 'sepia' ? 'dark' : 'sepia'
+      this.color = this.$colorMode.preference === 'light' ? 'dark' : 'light'
       return {
-        preferred: color === this.$colorMode.preference === 'sepia' ? 'dark' : 'sepia',
-        selected: color === this.$colorMode.value === 'sepia' ? 'dark' : 'sepia'
+        preferred: color === this.$colorMode.preference === 'light' ? 'dark' : 'light',
+        selected: color === this.$colorMode.value === 'light' ? 'dark' : 'light'
 
       }
     }

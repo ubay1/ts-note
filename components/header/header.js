@@ -7,9 +7,9 @@ export default {
     }
   },
   created () {
-    this.$nuxt.$on('theme', (data) => {
-      this.isTheme = data
-    })
+    // this.$nuxt.$on('theme', (data) => {
+    //   this.isTheme = data
+    // })
   },
   methods: {
   }
