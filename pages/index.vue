@@ -32,15 +32,7 @@ export default {
   },
   async asyncData ({ params, error, $content }) {
     try {
-      // const articleAll = await $content('articles', { deep: true })
-      //   .limit(3)
-      //   .fetch()
-      // // eslint-disable-next-line no-console
-      // console.log(articleAll)
-      // return { articleAll }
       const content = await getContent($content, params, error)
-      // eslint-disable-next-line no-console
-      console.log(content)
       return {
         allArticles: content.allArticles,
         paginatedArticles: content.paginatedArticles
@@ -56,21 +48,18 @@ export default {
     return {
       dark: false,
       isTheme: '',
-      routeName: ''
+      routeName: '',
+      searchValue: ''
     }
   },
   created () {
-    this.$nuxt.$on('theme', (data) => {
-      this.isTheme = data
-      this.isTheme === 'dark' ? this.dark = true : this.dark = false
+    this.$nuxt.$on('searchArticle', (data) => {
+      this.searchValue = data
     })
 
     this.routeName = this.$route.name
-    // eslint-disable-next-line no-console
-    // console.log(this.routeName)
   },
   mounted () {
-    // this.routeName = this.$route.name
   },
   head () {
     return {

@@ -5,6 +5,7 @@
         <img src="../../static/header.png" alt="Catatan Koding">
       </nuxt-link>
     </div>
+    <Search />
   </div>
 </template>
 

@@ -1,6 +1,4 @@
-/* eslint-disable no-console */
 export default async ($content, params, error) => {
-  console.log(params)
   const currentPage = parseInt(params.page)
 
   const perPage = 5

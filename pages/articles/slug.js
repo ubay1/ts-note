@@ -3,7 +3,6 @@ export default {
   async asyncData ({ $content, params, error }) {
     try {
       const article = await $content('articles', params.slug).fetch()
-      console.log(article)
       return { article }
     } catch (err) {
       error({
@@ -26,11 +25,14 @@ export default {
     formatDate (date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
+    },
+    capitalise (text) {
+      return text.charAt(0).toUpperCase() + text.slice(1)
     }
   },
   head () {
     return {
-      title: `${this.article.title}`,
+      title: `${this.capitalise(this.article.title)} - Programming Note`,
       meta: [
         {
           hid: 'description',
