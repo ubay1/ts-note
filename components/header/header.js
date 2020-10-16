@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
-import Search from '@/components/Search'
+// import Search from '@/components/Search'
 export default {
   components: {
-    Search
+    // Search
   },
   data () {
     return {
