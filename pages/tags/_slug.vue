@@ -1,15 +1,7 @@
 <template>
   <div class="__tags_block">
     <Header />
-    <!-- <ColorModePicker /> -->
     <div class="tags_doc">
-      <!-- <PostCard
-        v-for="post in articleAll"
-        :key="post.path"
-        :post="post"
-        :total="allArticles.length"
-        :class="{dark}"
-      /> -->
       <PostCard
         :articles="articlesByTag"
         :nameroute="routeName"
@@ -23,19 +15,20 @@ import Header from '@/components/header/header.vue'
 import PostCard from '@/components/PostCard'
 
 export default {
-  name: 'TagPage',
+  // name: 'TagPage',
   components: {
     Header,
     PostCard
   },
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'image', 'slug', 'tags'])
+      // .only(['title', 'description', 'image', 'slug', 'tags'])
+      .where({ tags: { $contains: params.slug } })
       .fetch()
 
     const articlesByTag = articles.filter((article) => {
       const articleTags = article.tags.map(x => x.toLowerCase())
-      return articleTags.includes(params.tag) // cari yang true
+      return articleTags.includes(params.slug) // cari yang true
     })
 
     // eslint-disable-next-line no-console
@@ -59,12 +52,12 @@ export default {
   },
   head () {
     return {
-      title: `Articles Tagged - ${this.capitalise(this.$route.params.tag)}`,
+      title: `Articles Tagged - ${this.capitalise(this.$route.params.slug)}`,
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.$config.baseUrl}/tags/${this.$route.params.tag}`
+          href: `${this.$config.baseUrl}/tags/${this.$route.params.slug}`
         }
       ]
     }
