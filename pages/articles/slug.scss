@@ -16,7 +16,7 @@
                 color: #007acc;
                 font-size: 2em;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -96,7 +96,7 @@
                 color: #007acc;
                 font-size: 2em;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -176,7 +176,7 @@
                 color: #007acc;
                 font-size: 2em;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -256,7 +256,7 @@
                 color: #007acc;
                 font-size: 24px;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -336,7 +336,7 @@
                 color: #007acc;
                 font-size: 20px;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -418,7 +418,7 @@
                 color: #007acc;
                 font-size: 20px;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: unset;
             }
     
             .diupdate {
@@ -487,3 +487,21 @@ pre[class*="language-"] {
     word-wrap: break-word;
     text-align: left;
 }
+
+@media (min-width: 640px) {
+    table {
+      display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+      display: none;
+    }
+  }
+
+  td:not(:last-child) {
+    border-bottom: 0;
+  }
+
+  th:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+  }

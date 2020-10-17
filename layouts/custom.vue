@@ -13,9 +13,6 @@ export default {
     }
   },
   created () {
-    this.$nuxt.$on('theme', (data) => {
-      this.isTheme = data
-    })
   }
 }
 </script>

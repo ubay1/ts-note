@@ -49,7 +49,8 @@ export default {
     {
       src: './plugins/vue-pagination.js',
       ssr: false
-    }
+    },
+    '~/plugins/repository.js'
     // {
     //   src: './plugins/tooltip.js',
     //   ssr: false
@@ -96,15 +97,22 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxt/content',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    '@nuxt/http'
   ],
+  http: {
+    baseUrl: 'https://api.nuxtjs.dev/'
+  },
   content: {
     liveEdit: false,
     components: true,
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-dracula.css'
-      }
+      },
+      remarkPlugins: [
+        ['remark-emoji', { emoticon: true }]
+      ]
     }
   },
   moment: {

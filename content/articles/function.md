@@ -2,7 +2,8 @@
 title: function
 description: Function pada typescript 
 tags: [typescript]
-image: img_blog/ts.png
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png
+published: 2020-10-02 08:00
 ---
 
 Generics bisa dibilang mirip any, bedanya kalo kita pake any **TSC** nggak bisa memvalidasi

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import Header from '@/components/header/header.vue'
 import PostCard from '@/components/PostCard'
 
@@ -9,7 +10,6 @@ export default {
   },
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
-      // .only(['title', 'description', 'image', 'slug', 'tags'])
       .where({ tags: { $contains: params.slug } })
       .fetch()
 
@@ -17,9 +17,6 @@ export default {
       const articleTags = article.tags.map(x => x.toLowerCase())
       return articleTags.includes(params.slug) // cari yang true
     })
-
-    // eslint-disable-next-line no-console
-    console.log(articlesByTag)
     return {
       articlesByTag
     }

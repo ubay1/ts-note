@@ -25,6 +25,7 @@ export default async ($content, params, error) => {
   }
 
   const paginatedArticles = await $content('articles')
+    .sortBy('published', 'desc')
     .limit(perPage)
     .skip(skipNumber())
     .fetch()

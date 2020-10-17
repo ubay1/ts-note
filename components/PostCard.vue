@@ -5,7 +5,7 @@
     <div v-for="post of articles" :key="post.slug" class="list_articles">
       <div class="image">
         <nuxt-link :to="post.path">
-          <img :src="`${nameroute === 'index' ? post.image : `../../${post.image}`}`" alt="">
+          <img :src="post.image" alt="">
         </nuxt-link>
       </div>
 

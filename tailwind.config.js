@@ -6,7 +6,9 @@
 */
 module.exports = {
   theme: {},
-  variants: {},
+  variants: {
+    tableLayout: ['responsive', 'hover', 'focus']
+  },
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
