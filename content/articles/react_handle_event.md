@@ -3,7 +3,7 @@ title: Handle event pada react.js
 description: handle event pada tiap" komponent dengan function component atau class component react.js
 tags: [react]
 image: https://alfieqashwa.github.io/img/react.png
-published: 2020-11-05 10:00
+published: 2020-11-05 13:30
 ---
 
 handle event pada tiap" komponent dengan function component atau class component dan juga mengiirm parameter dari handle event<br><br>

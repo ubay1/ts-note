@@ -3,7 +3,7 @@ title: Keterkaitan antara props dan state pada react.js
 description: mengambil data dari props dan menyimpannya pada state.
 tags: [react]
 image: https://alfieqashwa.github.io/img/react.png
-published: 2020-11-05 10:00
+published: 2020-11-05 11:00
 ---
 
 mengambil data dari props dan menyimpannya pada state. <br>

@@ -3,7 +3,7 @@ title: Untuk apa state pada react.js ?
 description: state pada react.js berguna untuk menyimpan data yang akan digunakan oleh component.
 tags: [react]
 image: https://alfieqashwa.github.io/img/react.png
-published: 2020-11-05 10:00
+published: 2020-11-05 13:00
 ---
 
 state pada react.js berguna untuk menyimpan data yang akan digunakan oleh component. <br>

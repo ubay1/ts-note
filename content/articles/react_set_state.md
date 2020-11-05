@@ -3,7 +3,7 @@ title: setState pada react.js
 description: setState berfungsi untuk mengatur atau merubah sebuah nilai state.
 tags: [react]
 image: https://alfieqashwa.github.io/img/react.png
-published: 2020-11-05 13:00
+published: 2020-11-05 13:50
 ---
 
 setState berfungsi untuk mengatur atau merubah sebuah nilai state.
