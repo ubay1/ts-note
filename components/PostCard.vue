@@ -58,7 +58,7 @@ export default {
   },
   mounted () {
     // eslint-disable-next-line no-console
-    console.log(this.nameroute)
+    // console.log(this.nameroute)
   }
 }
 </script>

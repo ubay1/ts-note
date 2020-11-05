@@ -33,7 +33,6 @@ export default {
     try {
       const content = await getContent($content, params, error)
       // eslint-disable-next-line no-console
-      // console.log(content)
       return {
         allArticles: content.allArticles,
         paginatedArticles: content.paginatedArticles
