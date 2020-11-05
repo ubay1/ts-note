@@ -9,6 +9,10 @@
       </div>
     </div>
 
+    <div class="img_header">
+      <img :src="article.image" alt="">
+    </div>
+
     <nuxt-content :document="article" />
 
     <div class="footer">
