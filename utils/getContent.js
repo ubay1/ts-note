@@ -14,8 +14,8 @@ export default async ($content, params, error) => {
   // use the % (modulus) operator to get a whole remainder
   const lastPageCount = totalArticles % perPage // misal: 11 % 2 = 1
 
-  console.log(currentPage) // 1
-  console.log(lastPage) // 2
+  console.log('page sejarang = ' + currentPage) // 1
+  console.log('page terakhir = ' + lastPage) // 2
 
   const skipNumber = () => {
     if (currentPage === 1) {
@@ -26,8 +26,8 @@ export default async ($content, params, error) => {
         console.log(`skip = ${totalArticles - 5}, karna semua data berjumlah genap`)
         return totalArticles - 5
       } else {
-        console.log(`skip = ${totalArticles - lastPageCount}, karna semua data berjumlah genap`)
-        return totalArticles - lastPageCount
+        console.log(`skip = ${totalArticles - lastPageCount}, karna semua data berjumlah ganjil`)
+        return totalArticles - 5
       }
     } else {
       console.log(`skip = ${(currentPage - 1) * perPage}, karna semua data berjumlah ganjil`)
